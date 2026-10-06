@@ -1,0 +1,113 @@
+/* 1. 全域重設：讓所有元素的盒⼦計算包含邊框與內距 */
+* {
+    box-sizing: border-box;
+}
+
+/* 2. 設定整體網⾴預設背景與⽂字顏⾊ */
+body {
+    line-height: 1.6;
+    color: #333333;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 0;
+    font-family: "Noto Sans TC", "Microsoft JhengHei", "PingFang TC", sans-serif;
+}
+
+/* ⾴⾸區塊樣式 */
+header {
+    background-color: #2c3e50;
+    color: #ffffff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    /* 標題靠左，導覽列靠右 */
+    align-items: center;
+    /* 垂直⽅向置中 */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+/* 導覽列超連結樣式 (後代選擇器) */
+nav {
+    margin-top: 10px;
+    display: flex;
+    gap: 15px;
+    /* ⼦元素之間的間距 */
+}
+
+nav a {
+    color: #ecf0f1;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 8px;
+    margin-top: 30px;
+}
+
+h3 {
+    color: #34495e;
+}
+
+/* 導覽列超連結懸停效果 */
+nav a:hover {
+    color: #f1c40f;
+    /* 滑⿏移上去變明亮⾦⿈⾊ */
+    text-decoration: underline;
+}
+
+/* 主要內容章節區塊美化 */
+section {
+    background-color: #ffffff;
+    max-width: 800px;
+    /* 設定最⼤寬度 */
+    margin: 20px auto;
+    /* 上下外距 20px，左右⾃動置中 */
+    padding: 25px;
+    /* 內距 25px */
+    border-radius: 8px;
+    /* 圓⾓邊框 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* 輕微陰影增添⽴體感 */
+}
+
+/* 美化表格 */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th,
+td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+th {
+    background-color: #3498db;
+    color: #ffffff;
+}
+
+tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+/* 美化⾴尾 */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #7f8c8d;
+    s font-size: 14px;
+    margin-top: 40px;
+}
