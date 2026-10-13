@@ -8,25 +8,29 @@
     <!-- 引⼊ Google Fonts 思源⿊體 Noto Sans TC -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">ß
-    <!-- 引⼊外部 CSS 樣式表 -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+
+     <!-- 引⼊外部 CSS 樣式表 -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
         <h1>歡迎來到我的網⾴設計學習筆記</h1>
+
         <nav>
             <!-- 導覽列區塊 (下⼀⼩節將加⼊連結) -->
-        </nav>
         <a href="index.html">⾸⾴</a> |
         <a href="https://www.shu.edu.tw/" target="_blank">世新⼤學⾸⾴</a>
         </nav>
+        <button id="theme-btn" onclick="toggleTheme()">切換深色模式</button>
     </header>
     <section>
         <h2>關於我的學習⽬標</h2>
         <p>這是我在世新⼤學網⾴設計通識課的第三週練習作品。</p>
         <p>透過每週逐步練習，希望能打造出專屬⾃⼰的網⾴作品集！</p>
+        <button onclick="showSmartGreeting()">取得今⽇學習動⼒問候語</button>
+        <br><br>
         <img src="IMG_0927 (1).jpg" alt="個人自拍照">
         <h3>本週學會的技能列表：</h3>
         <ul>
@@ -36,6 +40,7 @@
             <li>加⼊超連結與圖⽚ (含 alt 描述)</li>
         </ul>
     </section>
+    
     <section>
         <h2>本學期課程簡表</h2>
         <div class="card">
@@ -55,9 +60,13 @@
             </table>
         </div>
     </section>
+
     <footer>
         <p>© 2026 林宥臻 All Rights Reserved.</p>
     </footer>
+
+    <!-- 引⼊外部 JavaScript 檔案-->
+    <script src="script.js"></script>
 </body>
 
 </html>
